@@ -67,7 +67,13 @@ describe("TimeLockedVault", function () {
       const amount2 = hre.ethers.parseEther("2.0");
       const lockDuration = 3600;
 
+      // User1 deposits
+      await vault.connect(user1).deposit(lockDuration, { value: amount1 });
+      
+      // User2 deposits
+      await vault.connect(user2).deposit(lockDuration, { value: amount2 });
 
+      // Check both deposits
       const deposit1 = await vault.getDeposit(user1.address);
       const deposit2 = await vault.getDeposit(user2.address);
 
