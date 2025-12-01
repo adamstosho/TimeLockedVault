@@ -1,0 +1,20 @@
+{
+  "name": "Amazing NFT #3",
+  "description": "This is an amazing NFT created with OpenZeppelin and Hardhat",
+  "image": "https://gateway.pinata.cloud/ipfs/QmYwAPJzv5CZsnA625s3Xf2nemtYgPpHdWEz79ojWnPbdG/3.png",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Color",
+      "value": "Gold"
+    },
+    {
+      "trait_type": "Power",
+      "value": 100
+    }
+  ]
+}
+

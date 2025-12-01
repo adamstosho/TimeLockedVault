@@ -1,0 +1,20 @@
+{
+  "name": "Amazing NFT #1",
+  "description": "This is an amazing NFT created with OpenZeppelin and Hardhat",
+  "image": "https://gateway.pinata.cloud/ipfs/QmYwAPJzv5CZsnA625s3Xf2nemtYgPpHdWEz79ojWnPbdG/1.png",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Color",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "Power",
+      "value": 50
+    }
+  ]
+}
+
