@@ -2,9 +2,12 @@ import axios from "axios";
 import * as fs from "fs";
 import * as path from "path";
 import FormData from "form-data";
+import * as dotenv from "dotenv";
 
-const PINATA_API_KEY = "6c01053951e2cf255106";
-const PINATA_SECRET_KEY = "7c892d891e8e924249d8ccb70b7dd46cbdf69df34f48b645ffdf792312dca904";
+dotenv.config();
+
+const PINATA_API_KEY = process.env.PINATA_API_KEY;
+const PINATA_SECRET_KEY = process.env.PINATA_SECRET_KEY;
 
 
 async function uploadJSONToPinata(jsonContent: object, fileName: string): Promise<string> {
@@ -41,7 +44,10 @@ async function main() {
   console.log("=============================================");
 
   if (!PINATA_API_KEY || !PINATA_SECRET_KEY) {
-    console.error("ERROR: PINATA_API_KEY and PINATA_SECRET_KEY must be set in hardhat.config.ts vars");
+    console.error("ERROR: PINATA_API_KEY and PINATA_SECRET_KEY must be set in your .env file");
+    console.error("Please create a .env file with:");
+    console.error("PINATA_API_KEY=your_api_key");
+    console.error("PINATA_SECRET_KEY=your_secret_key");
     process.exit(1);
   }
 

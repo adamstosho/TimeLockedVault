@@ -10,8 +10,8 @@ async function main() {
   const MyNFTFactory = await hre.ethers.getContractFactory("MyNFT");
   
   const nft = await MyNFTFactory.deploy(
-    "My Amazing NFT Collection",
-    "MANFT",
+    "ARTRedox",
+    "RDX",
     1000,
     deployer.address
   );

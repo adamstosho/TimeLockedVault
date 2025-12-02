@@ -1,20 +1,15 @@
 {
-  "name": "Amazing NFT #2",
-  "description": "This is an amazing NFT created with OpenZeppelin and Hardhat",
-  "image": "https://gateway.pinata.cloud/ipfs/QmYwAPJzv5CZsnA625s3Xf2nemtYgPpHdWEz79ojWnPbdG/2.png",
+  "name": "ARTRedox #2",
+  "description": "ARTRedox NFT #2",
+  "image": "ipfs://bafybeigeddumd4sqv5mycrosdefu5o4z7qmhpfcmlr2wzrxlvftnh4mcqy",
   "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "ARTRedox"
+    },
     {
       "trait_type": "Rarity",
       "value": "Rare"
-    },
-    {
-      "trait_type": "Color",
-      "value": "Purple"
-    },
-    {
-      "trait_type": "Power",
-      "value": 75
     }
   ]
 }
-

@@ -1,11 +1,11 @@
 import hre from "hardhat";
 
-const NFT_CONTRACT_ADDRESS = "0xEb829C293A06b4AE7C8Baf3442A29795C44C0D92";
+const NFT_CONTRACT_ADDRESS: string = "0xc8380827DdCcc405F27F39dCA60328b8fC9E4fBA";
 
 async function main() {
   const [user] = await hre.ethers.getSigners();
 
-  if (NFT_CONTRACT_ADDRESS === "0x0000000000000000000000000000000000000000") {
+  if (!NFT_CONTRACT_ADDRESS || NFT_CONTRACT_ADDRESS === "0x0000000000000000000000000000000000000000") {
     console.error("ERROR: Please update NFT_CONTRACT_ADDRESS in the script!");
     process.exit(1);
   }
